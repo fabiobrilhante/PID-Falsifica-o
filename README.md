@@ -56,6 +56,6 @@ Nível de Integridade: Se você (com privilégios normais - Medium Integrity) te
 Resumo para o Red Team: PPID Spoofing é um pré-requisito obrigatório de OPSEC na criação de processos hoje em dia, mas deve ser combinado com técnicas como Block DLLs, Command Line Spoofing e PPID com Token Impersonation para ser invisível a EDRs avançados.
 
 
-*FUNCIONAMENTO E UM EDR*
+*FUNCIONAMENTO DE UM EDR*
 
 <img width="1600" height="820" alt="WhatsApp Image 2026-07-26 at 15 21 25" src="https://github.com/user-attachments/assets/c813c778-489f-4be2-9175-c3fecef23116" />
