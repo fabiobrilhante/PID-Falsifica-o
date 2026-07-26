@@ -1,6 +1,15 @@
 # PID-Falsifica-o
 Quebrar a "Árvore de Processos" (Process Tree Evasion)
 
+
+
+<img width="1600" height="820" alt="WhatsApp Image 2026-07-26 at 15 21 25" src="https://github.com/user-attachments/assets/c94ee902-58ed-45a3-8a6f-61e2be9c4d36" />
+
+
+
+
+
+
 Do ponto de vista de um Red Team (ou de um atacante), essa técnica é conhecida como PPID Spoofing (Parent Process ID Spoofing).
 
 Ela é uma técnica fundamental de OPSEC (Segurança Operacional) e Evasão de Defesas (T1134.004 no MITRE ATT&CK).
