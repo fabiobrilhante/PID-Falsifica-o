@@ -1,4 +1,6 @@
-#PID-Falsificação (PPID Spoofing & Process Tree Evasion)
+PID-Falsificação (PPID Spoofing & Process Tree Evasion)
+
+
 Técnica de OPSEC (Segurança Operacional) e Evasão de Defesas
 
 MITRE ATT&CK: T1134.004 - Access Token Manipulation: Parent Process ID Spoofing
