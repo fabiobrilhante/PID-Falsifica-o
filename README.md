@@ -1,15 +1,6 @@
 # PID-Falsifica-o
 Quebrar a "Árvore de Processos" (Process Tree Evasion)
 
-
-
-<img width="1600" height="820" alt="WhatsApp Image 2026-07-26 at 15 21 25" src="https://github.com/user-attachments/assets/c94ee902-58ed-45a3-8a6f-61e2be9c4d36" />
-
-
-
-
-
-
 Do ponto de vista de um Red Team (ou de um atacante), essa técnica é conhecida como PPID Spoofing (Parent Process ID Spoofing).
 
 Ela é uma técnica fundamental de OPSEC (Segurança Operacional) e Evasão de Defesas (T1134.004 no MITRE ATT&CK).
@@ -57,9 +48,14 @@ svchost.exe (para tarefas do sistema).
 Faz com que seu artefato se "misture com o ruído" de fundo do sistema operacional (Living off the Land).
 
 
-*******************************************************   O Lado do "Blue Team" (O que o Red Team precisa saber que dá errado)  *************************************************************************
+*******************************************************   O Lado do "Blue Team" (O que o Red Team precisa saber que dá errado)  ***********************************************************************
 Embora o PPID Spoofing engane o Gerenciador de Tarefas e regras básicas de SIEM, EDRs modernos de nível Kernel não são 100% enganados por esse código básico porque:
 
 ETW-Ti (Event Tracing for Windows - Threat Intelligence): O Windows kernel relata dois campos: o Parent Process (que você falsificou para explorer.exe) e o Creator Process (que revela quem realmente chamou a API CreateProcess).
 Nível de Integridade: Se você (com privilégios normais - Medium Integrity) tentar colocar um processo elevado (High/System Integrity) como pai, o Windows deixará criar o processo, mas os níveis de integridade e os tokens podem parecer inconsistentes para uma análise profunda de memória.
 Resumo para o Red Team: PPID Spoofing é um pré-requisito obrigatório de OPSEC na criação de processos hoje em dia, mas deve ser combinado com técnicas como Block DLLs, Command Line Spoofing e PPID com Token Impersonation para ser invisível a EDRs avançados.
+
+
+*FUNCIONAMENTO E UM EDR*
+
+<img width="1600" height="820" alt="WhatsApp Image 2026-07-26 at 15 21 25" src="https://github.com/user-attachments/assets/c813c778-489f-4be2-9175-c3fecef23116" />
